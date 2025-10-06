@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CODEx | Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CODEx</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#" onclick="filterProducts('all')">All</a>
+      <a href="#" onclick="filterProducts('tshirt')">T-Shirts</a>
+      <a href="#" onclick="filterProducts('trouser')">Trousers</a>
+      <a href="#">Wishlist ❤️ <span id="wish-count">0</span></a>
+      <a href="#">Cart 🛒 <span id="cart-count">0</span></a>
+      
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-slider">
+  <div class="slides">
+    <img src="Img/img1.png" alt="Slide 1" class="slide active">
+    <img src="Img/img2.png" alt="Slide 2" class="slide">
+    <img src="Img/img3.png" alt="Slide 3" class="slide">
+    <img src="Img/img4.png" alt="Slide 3" class="slide">
+  </div>
+  <div class="hero-text">
+    <h1>Exclusive Collection</h1>
+    <p>T-Shirts & Trousers for Every Style</p>
+    <button onclick="scrollToShop()">Shop Now</button>
+  </div>
+  </section>
+ 
+
+  <div class="shop-container">
+  <!-- Sidebar Filter -->
+  <aside class="filter-sidebar">
+    <h3>Filter by Size</h3>
+    <label><input type="checkbox" value="S" class="size-filter"> Small (S)</label>
+    <label><input type="checkbox" value="M" class="size-filter"> Medium (M)</label>
+    <label><input type="checkbox" value="L" class="size-filter"> Large (L)</label>
+    <label><input type="checkbox" value="XL" class="size-filter"> XL</label>
+    <label><input type="checkbox" value="XXL" class="size-filter"> XXL</label>
+  </aside>
+
+  <!-- Product Grid -->
+  <section class="product-grid">
+    <div class="product" data-size="M">
+      <img src="images/tshirt1.jpg" alt="T-shirt">
+      <h4>Classic T-shirt</h4>
+      <p>Size: M</p>
+    </div>
+    <div class="product" data-size="L">
+      <img src="images/tshirt2.jpg" alt="T-shirt">
+      <h4>Cool Black Tee</h4>
+      <p>Size: L</p>
+    </div>
+    <div class="product" data-size="XL">
+      <img src="images/tshirt3.jpg" alt="T-shirt">
+      <h4>White Printed Tee</h4>
+      <p>Size: XL</p>
+    </div>
+    <div class="product" data-size="S">
+      <img src="images/tshirt4.jpg" alt="T-shirt">
+      <h4>Minimalist Tee</h4>
+      <p>Size: S</p>
+    </div>
+  </section>
+</div>
+
+
+
+
+
+
+
+
+  <!-- Products -->
+  <main class="products" id="shop"></main>
+
+  <footer>
+    <p>© 2025 CODEx | Designed with ❤️</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
